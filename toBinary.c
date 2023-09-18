@@ -23,6 +23,7 @@ int int_to_binary(va_list *ptr)
 	{
 		_putchar(v[i]);
 		size++;
+		i--;
 	}
 	return (size);
 }
