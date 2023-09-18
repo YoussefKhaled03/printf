@@ -16,6 +16,8 @@ int handle_format_specifier(char c, va_list *ptr)
 		size += _putchar('%');
 	else if (c == 's')
 		size += _putstring(va_arg(*ptr, char *));
+	else if (c == 'r')
+		size += _reverse_string(va_arg(*ptr, char *));
 	else if (c == 'c')
 		size += _putchar(va_arg(*ptr, int));
 	else if (c == 'd' || c == 'i')

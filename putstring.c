@@ -16,3 +16,31 @@ int _putstring(char *s)
 		_putchar(s[i]);
 	return (i);
 }
+
+/**
+ * _reverse_string- rev string func
+ * @s: string that will reverse
+ * Return: size of string
+ */
+
+int _reverse_string(char *s)
+{
+	int i;
+	int n;
+
+
+	if (!s)
+		return (_putstring("(null)"));
+	i = 0;
+	while (s[i])
+	{
+		i++;
+	}
+	n = i;
+	i--;
+	while (i >= 0)
+	{
+		_putchar(s[i--]);
+	}
+	return (n);
+}
