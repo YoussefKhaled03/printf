@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int size = 0,i;
+	int size = 0, i;
 	va_list ptr;
 
 	va_start(ptr, format);
