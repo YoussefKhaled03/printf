@@ -10,7 +10,7 @@ int int_to_binary(va_list *ptr)
 {
 	unsigned int a = va_arg(*ptr, unsigned int);
 	char v[39];
-	int i = 0, size = 0;
+	unsigned int i = 0, size = 0;
 
 	while (a)
 	{
