@@ -20,6 +20,8 @@ int handle_format_specifier(char c, va_list *ptr)
 		size += _putchar(va_arg(*ptr, int));
 	else if (c == 'd' || c == 'i')
 		size += int_hand(ptr);
+	else if (c == 'b')
+		size += toBinary();
 	else
 		size += _putchar('%') + _putchar(c);
 	return (size);
