@@ -12,6 +12,12 @@ int int_to_binary(va_list *ptr)
 	char v[39];
 	int i = 0, size = 0;
 
+	if (a == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
 	while (a)
 	{
 		v[i] = a % 2 + '0';
