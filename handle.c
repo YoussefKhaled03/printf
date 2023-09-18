@@ -21,7 +21,7 @@ int handle_format_specifier(char c, va_list *ptr)
 	else if (c == 'd' || c == 'i')
 		size += int_hand(ptr);
 	else if (c == 'b')
-		size += toBinary();
+		size += int_to_binary(ptr);
 	else
 		size += _putchar('%') + _putchar(c);
 	return (size);
