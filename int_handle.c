@@ -7,7 +7,8 @@
 */
 int int_hand(va_list *ptr)
 {
-	char v[19], i = 0, n = 0;
+	char v[19];
+	int i = 0, n = 0;
 	long int x = va_arg(*ptr, int);
 
 	if (x == 0)
@@ -22,7 +23,8 @@ int int_hand(va_list *ptr)
 	}
 	while (x)
 	{
-		v[i++] = x % 10 + '0';
+		v[i] = x % 10 + '0';
+		i++;
 		x /= 10;
 	}
 	i--;
