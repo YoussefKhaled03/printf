@@ -21,13 +21,15 @@ int rot_str(char *s)
 			else
 				_putchar(s[i] - 13);
 		}
-		if (s[i] >= 'a' && s[i] <= 'z')
+		else if (s[i] >= 'a' && s[i] <= 'z')
 		{
-		if (s[i] - 'a' < 13)
-			_putchar(s[i] + 13);
-		else
-			_putchar(s[i] - 13);
+			if (s[i] - 'a' < 13)
+				_putchar(s[i] + 13);
+			else
+				_putchar(s[i] - 13);
 		}
+		else
+			_putchar(s[i]);
 	}
 		return (i);
 }
